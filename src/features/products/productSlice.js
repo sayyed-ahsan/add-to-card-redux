@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-import { useEffect } from "react";
 
 export const fetchProducts = createAsyncThunk("products/fetchProducts", async ()=>{
     const response = axios.get('https://bob-shop-server.vercel.app/products')

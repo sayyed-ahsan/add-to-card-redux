@@ -26,7 +26,7 @@ const TopRated = () => {
   return (
     <div className='grid grid-cols-4 mx-auto my-10'>
       <div className="col-span-3">
-        <h1 className="text-3xl font-semibold mb-2">Top-rated Products</h1><hr />
+        <h1 className="text-3xl font-semibold mb-2">Top Rated Products</h1><hr />
         <div className="mt-10 grid grid-cols-4 gap-4">
           {
             products.length > 0 ?

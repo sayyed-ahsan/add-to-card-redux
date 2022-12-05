@@ -1,8 +1,8 @@
 import React from "react";
 import { BiListPlus } from "react-icons/bi";
 
-const ProductCard = ({ product }) => {
-  const { name, seller, price, stock, ratings, img, shipping } = product
+const ProductCard = ({ product, setProductInfo }) => {
+  const { name, seller, price, ratings, img } = product;
   return (
     <div
       className='shadow-lg rounded-lg border relative  flex flex-col text-indigo-900'>
@@ -18,9 +18,9 @@ const ProductCard = ({ product }) => {
 
       </div>
       <div className='flex gap-2 right-2 absolute bottom-1'>
-        <button className='bg-indigo-500 rounded-lg py-1 px-2 flex-1 text-white text-bold'>
+        <label onClick={() => setProductInfo(product)} htmlFor="bookingModal" className='bg-indigo-500 cursor-pointer rounded-lg py-1 px-2 flex-1 text-white text-bold'>
           Add to cart
-        </button>
+        </label>
         <button
           title='Add to wishlist'
           className='bg-indigo-500  py-1 px-2 rounded-lg'
