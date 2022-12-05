@@ -5,9 +5,9 @@ import { IoIosListBox } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <nav className='h-14 bg-indigo-200 rounded-full m-2 max-w-7xl mx-auto px-5'>
-      <ul className='h-full  mx-auto flex justify-between items-center gap-3 font-semibold text-indigo-900'>
-        <h1 className='flex-1'>Moon Tech</h1>
+    <nav className='h-14 bg-slate-700 rounded m-2 max-w-7xl mx-auto px-5'>
+      <ul className='h-full  mx-auto flex justify-between items-center gap-3 font-semibold text-white'>
+        <h1 className='flex-1'>Bob Shop</h1>
         <li>
           <Link to='/'>Home</Link>
         </li>
