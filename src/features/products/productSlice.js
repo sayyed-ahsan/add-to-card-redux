@@ -10,21 +10,21 @@ export const fetchProducts = createAsyncThunk("products/fetchProducts", async ()
 const productSlice = createSlice({
     name: "products",
     initialState:{
-        isLading:false,
+        isLoading:false,
         products:[],
         error:null
     },
     extraReducers: (builder) =>{
         builder.addCase(fetchProducts.pending, (state)=>{
-            state.isLading = true;
+            state.isLoading = true;
         });
         builder.addCase(fetchProducts.fulfilled, (state, action)=>{
-            state.isLading = false;
+            state.isLoading = false;
             state.products = action.payload;
             state.error = null;
         });
         builder.addCase(fetchProducts.rejected, (state, action)=>{
-            state.isLading = false;
+            state.isLoading = false;
             state.products = [];
             state.error = action.error.message;
         });
